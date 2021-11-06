@@ -4,6 +4,7 @@
   background-size: cover
   padding-top: 40px
   padding-bottom: 160px
+  color: white
 
   &-top
     justify-content: space-between
@@ -27,7 +28,6 @@
     font-size: 25px
     line-height: 37px
     border-radius: 50%
-    color: white
     background: linear-gradient(238.08deg, #A248D9 -25.15%, #ECCDFF 127.57%)
 
   &__name
@@ -36,7 +36,6 @@
     font-weight: 500
     font-size: 25px
     line-height: 37px
-    color: white
 
   &-nav
     display: flex
@@ -51,7 +50,6 @@
     font-weight: normal
     font-size: 14px
     line-height: 21px
-    color: white
     cursor: pointer
 
     &__item
@@ -70,3 +68,67 @@
       border: 1px solid white
       border-radius: 30px
       color: white
+
+  &__author
+    position: relative
+    font-family: Poppins
+    font-style: normal
+    font-weight: normal
+    font-size: 18px
+    line-height: 25px
+    margin-right: 35px
+
+    &__name
+
+      &::after
+        content: "."
+        position: absolute
+        top: -5px
+        left: 120%
+
+  &__title
+    margin-top: 19px
+    margin-bottom: 17px
+    font-family: Poppins
+    font-style: normal
+    font-weight: 600
+    font-size: 66px
+    line-height: 70px
+
+  &__info
+    font-family: Poppins
+    font-style: normal
+    font-weight: normal
+    font-size: 16px
+    line-height: 28px
+    margin-bottom: 35px
+
+  &__main
+
+    &__button
+      padding: 13px 30px
+      font-family: Poppins
+      font-style: normal
+      font-weight: 500
+      font-size: 14px
+      line-height: 21px
+      height: 46px
+      background-color: inherit
+      border: 1px solid white
+      border-radius: 30px
+      color: white
+      margin-bottom: 60px
+
+      &__left
+        margin-right: 8px
+        background: linear-gradient(265.37deg, #9224D6 -49.74%, #BD87DE 116.53%)
+
+  &__contacts
+
+    &__title
+      font-family: Poppins
+      font-style: normal
+      font-weight: 500
+      font-size: 14px
+      line-height: 21px
+      margin-bottom: 17px

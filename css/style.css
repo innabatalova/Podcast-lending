@@ -12,6 +12,7 @@ a {
   background-size: cover;
   padding-top: 40px;
   padding-bottom: 160px;
+  color: white;
 }
 
 .header-top {
@@ -38,7 +39,6 @@ a {
   font-size: 25px;
   line-height: 37px;
   border-radius: 50%;
-  color: white;
   background: linear-gradient(238.08deg, #A248D9 -25.15%, #ECCDFF 127.57%);
 }
 
@@ -48,7 +48,6 @@ a {
   font-weight: 500;
   font-size: 25px;
   line-height: 37px;
-  color: white;
 }
 
 .header-nav {
@@ -65,7 +64,6 @@ a {
   font-weight: normal;
   font-size: 14px;
   line-height: 21px;
-  color: white;
   cursor: pointer;
 }
 
@@ -86,5 +84,70 @@ a {
   border: 1px solid white;
   border-radius: 30px;
   color: white;
+}
+
+.header__author {
+  position: relative;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  margin-right: 35px;
+}
+
+.header__author__name::after {
+  content: ".";
+  position: absolute;
+  top: -5px;
+  left: 120%;
+}
+
+.header__title {
+  margin-top: 19px;
+  margin-bottom: 17px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 66px;
+  line-height: 70px;
+}
+
+.header__info {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  margin-bottom: 35px;
+}
+
+.header__main__button {
+  padding: 13px 30px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  height: 46px;
+  background-color: inherit;
+  border: 1px solid white;
+  border-radius: 30px;
+  color: white;
+  margin-bottom: 60px;
+}
+
+.header__main__button__left {
+  margin-right: 8px;
+  background: linear-gradient(265.37deg, #9224D6 -49.74%, #BD87DE 116.53%);
+}
+
+.header__contacts__title {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  margin-bottom: 17px;
 }
 /*# sourceMappingURL=style.css.map */
