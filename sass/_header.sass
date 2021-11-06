@@ -112,6 +112,7 @@
       font-weight: 500
       font-size: 14px
       line-height: 21px
+      min-width: 175px
       height: 46px
       background-color: inherit
       border: 1px solid white
@@ -191,3 +192,94 @@
 
     &__img
       margin-right: 20px
+
+@media screen and (max-width: 1400px)
+  .header
+
+    &__main
+
+      &__photo
+
+        &__1, &__2, &__3, &__4, &__dekor1, &__dekor2
+          display: none
+
+@media screen and (max-width: 992px)
+  .header
+
+    &-top
+      margin-bottom: 50px
+
+    &__logotop
+      margin-bottom: 20px
+
+    &-nav
+      justify-content: flex-start
+
+@media screen and (max-width: 768px)
+  .header
+
+    &__nav
+      padding-left: 0
+
+      &__item
+        margin-right: 35px
+
+      &__button
+        padding: 9px 25px
+        font-size: 11px
+        line-height: 16px
+
+    &__main
+
+      &__photo
+
+        &::after
+          display: none
+
+        &::before
+          right: -25px
+
+@media screen and (max-width: 576px)
+  .header
+    padding-bottom: 70px
+
+    &-nav
+      flex-wrap: wrap
+
+    &__nav
+
+      &__item
+        font-size: 11px
+        line-height: 15px
+        margin-right: 20px
+
+    &__author
+      font-size: 11px
+      line-height: 15px
+
+    &__info
+      font-size: 11px
+      line-height: 15px
+
+    &__main
+
+      &__photo
+
+        &::before
+          display: none
+
+      &__button
+
+        &__left
+          margin-bottom: 20px
+
+    &__title
+      font-size: 45px
+      line-height: 40px
+
+    &__icons
+      display: flex
+      flex-wrap: wrap
+
+      &__img
+        margin-bottom: 10px

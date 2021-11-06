@@ -129,6 +129,7 @@ a {
   font-weight: 500;
   font-size: 14px;
   line-height: 21px;
+  min-width: 175px;
   height: 46px;
   background-color: inherit;
   border: 1px solid white;
@@ -216,5 +217,82 @@ a {
 
 .header__icons__img {
   margin-right: 20px;
+}
+
+@media screen and (max-width: 1400px) {
+  .header__main__photo__1, .header__main__photo__2, .header__main__photo__3, .header__main__photo__4, .header__main__photo__dekor1, .header__main__photo__dekor2 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .header-top {
+    margin-bottom: 50px;
+  }
+  .header__logotop {
+    margin-bottom: 20px;
+  }
+  .header-nav {
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header__nav {
+    padding-left: 0;
+  }
+  .header__nav__item {
+    margin-right: 35px;
+  }
+  .header__nav__button {
+    padding: 9px 25px;
+    font-size: 11px;
+    line-height: 16px;
+  }
+  .header__main__photo::after {
+    display: none;
+  }
+  .header__main__photo::before {
+    right: -25px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .header {
+    padding-bottom: 70px;
+  }
+  .header-nav {
+    flex-wrap: wrap;
+  }
+  .header__nav__item {
+    font-size: 11px;
+    line-height: 15px;
+    margin-right: 20px;
+  }
+  .header__author {
+    font-size: 11px;
+    line-height: 15px;
+  }
+  .header__info {
+    font-size: 11px;
+    line-height: 15px;
+  }
+  .header__main__photo::before {
+    display: none;
+  }
+  .header__main__button__left {
+    margin-bottom: 20px;
+  }
+  .header__title {
+    font-size: 45px;
+    line-height: 40px;
+  }
+  .header__icons {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .header__icons__img {
+    margin-bottom: 10px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
