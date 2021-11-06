@@ -123,6 +123,60 @@
         margin-right: 8px
         background: linear-gradient(265.37deg, #9224D6 -49.74%, #BD87DE 116.53%)
 
+    &__photo
+      position: relative
+
+      &__1
+        position: absolute
+        bottom: -20px
+        left: 125px
+      &__2
+        position: absolute
+        right: -30px
+        top: 100px
+
+      &__3
+        position: absolute
+        left: 65px
+
+      &:before
+        content: ""
+        position: absolute
+        right: 115px
+        top: -45px
+        width: 160px
+        height: 160px
+        background: linear-gradient(220.4deg, #AB69FF -24.24%, #BE9AED 129%)
+        box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.25)
+        border-radius: 30px 30px 30px 0px
+
+      &::after
+        content: ""
+        position: absolute
+        right: 10px
+        top: -95px
+        width: 45px
+        height: 45px
+        border-radius: 50%
+        background-color: #FF8E8E
+
+      &__dekor1
+        position: absolute
+        bottom: -10px
+        width: 55px
+        height: 55px
+        border-radius: 50%
+        background-color: #FFD646
+
+      &__dekor2
+        position: absolute
+        bottom: -45px
+        right: 90px
+        width: 35px
+        height: 35px
+        border-radius: 50%
+        background-color: #8FDEFF
+
   &__contacts
 
     &__title
@@ -132,3 +186,8 @@
       font-size: 14px
       line-height: 21px
       margin-bottom: 17px
+
+  &__icons
+
+    &__img
+      margin-right: 20px
