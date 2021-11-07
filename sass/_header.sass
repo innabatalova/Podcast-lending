@@ -30,6 +30,10 @@
     border-radius: 50%
     background: linear-gradient(238.08deg, #A248D9 -25.15%, #ECCDFF 127.57%)
 
+    &:hover, &:focus
+      border: 1px solid #A248D9
+      background: #A248D9
+
   &__name
     font-family: Poppins
     font-style: normal
@@ -56,6 +60,9 @@
       margin-right: 50px
       margin-top: 15px
 
+      &:hover, &:focus
+        color: #9224D6
+
     &__button
       padding: 9px 35px
       font-family: Poppins
@@ -68,6 +75,10 @@
       border: 1px solid white
       border-radius: 30px
       color: white
+
+      &:hover, &:focus
+        background: #9224D6
+        border: 1px solid #9224D6
 
   &__author
     position: relative
@@ -120,9 +131,17 @@
       color: white
       margin-bottom: 60px
 
+      &:hover, &:focus
+        background: #9224D6
+        border: 1px solid #9224D6
+
       &__left
         margin-right: 8px
         background: linear-gradient(265.37deg, #9224D6 -49.74%, #BD87DE 116.53%)
+
+        &:hover, &:focus
+          background: #9224D6
+          border: 1px solid #9224D6
 
     &__photo
       position: relative
@@ -192,6 +211,7 @@
 
     &__img
       margin-right: 20px
+      cursor: pointer
 
 @media screen and (max-width: 1400px)
   .header
