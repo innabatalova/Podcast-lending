@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  font-family: Poppins;
 }
 
 a {
@@ -33,7 +34,6 @@ a {
   margin-right: 20px;
   width: 50px;
   height: 50px;
-  font-family: Poppins;
   font-style: normal;
   font-weight: 500;
   font-size: 25px;
@@ -48,7 +48,6 @@ a {
 }
 
 .header__name {
-  font-family: Poppins;
   font-style: normal;
   font-weight: 500;
   font-size: 25px;
@@ -64,7 +63,6 @@ a {
 .header__nav {
   display: flex;
   list-style-type: none;
-  font-family: Poppins;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -83,7 +81,6 @@ a {
 
 .header__nav__button {
   padding: 9px 35px;
-  font-family: Poppins;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -102,7 +99,6 @@ a {
 
 .header__author {
   position: relative;
-  font-family: Poppins;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -120,7 +116,6 @@ a {
 .header__title {
   margin-top: 19px;
   margin-bottom: 17px;
-  font-family: Poppins;
   font-style: normal;
   font-weight: 600;
   font-size: 66px;
@@ -128,7 +123,6 @@ a {
 }
 
 .header__info {
-  font-family: Poppins;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -138,7 +132,6 @@ a {
 
 .header__main__button {
   padding: 13px 30px;
-  font-family: Poppins;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -231,7 +224,6 @@ a {
 }
 
 .header__contacts__title {
-  font-family: Poppins;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -325,8 +317,14 @@ a {
   padding-top: 100px;
 }
 
+.main-titlewrap {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+  margin-bottom: 60px;
+}
+
 .main-title {
-  font-family: Poppins;
   font-style: normal;
   font-weight: normal;
   font-size: 35px;
@@ -337,7 +335,6 @@ a {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  font-family: Poppins;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -349,10 +346,144 @@ a {
 .main__row {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .main__card {
   padding: 1px;
   width: 420px;
+  margin-bottom: 60px;
+  border: none;
+  cursor: pointer;
+}
+
+.main__card__img {
+  width: 100%;
+  max-height: 310px;
+}
+
+.main__card__ratingwrap {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.main__card__rating {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 120px;
+  height: 55px;
+  background-color: #1C1B1E;
+  color: white;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  border-radius: 10px 0px;
+}
+
+.main__card__namewrap {
+  margin-bottom: 15px;
+}
+
+.main__card__name {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.main__card__name__author {
+  position: relative;
+  margin-right: 28px;
+}
+
+.main__card__name__author::after {
+  content: ".";
+  position: absolute;
+  top: -5px;
+  left: 120%;
+}
+
+.main__card__title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+  margin-bottom: 10px;
+}
+
+.main__card__text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  margin-bottom: 19px;
+}
+
+.main__card__timewrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main__card__playwrap {
+  display: flex;
+}
+
+.main__card__play {
+  min-width: 150px;
+  margin-left: 5px;
+  color: #9224D6;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  cursor: pointer;
+}
+
+.main__card__play:hover, .main__card__play:focus {
+  color: #580c87;
+}
+
+@media screen and (max-width: 1400px) {
+  .main__card {
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .main-titlewrap {
+    margin-top: 50px;
+    margin-bottom: 40px;
+  }
+  .main__card {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main__card {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .main-titlewrap {
+    flex-direction: column;
+    align-items: center;
+  }
+  .main__row {
+    width: 100%;
+    margin: auto;
+  }
+  .main__card__text, .main__card__name {
+    font-size: 11px;
+    line-height: 15px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
