@@ -70,3 +70,63 @@
 
     &:hover, &:focus
       background-color: #580c87
+
+@media screen and (max-width: 1200px)
+  .article
+
+    &__title
+      font-size: 35px
+      line-height: 40px
+
+    &__text
+      font-size: 16px
+      line-height: 22px
+
+    &__circle
+
+      &__2, &__3
+        right: -30%
+
+@media screen and (max-width: 992px)
+  .article
+
+    &__imgwrap
+      padding-left: 5%
+      margin-bottom: 30px
+
+    &__circle
+
+      &__2
+        right: 0
+
+      &__3
+        right: 10%
+
+    &__info
+      justify-content: center
+
+    &__button
+      margin: auto
+
+@media screen and (max-width: 576px)
+  .article
+
+    &__imgwrap
+      padding-left: calc(var(--bs-gutter-x) * .5)
+
+    &__photo
+      width: 100%
+
+    &__circle
+      display: none
+
+    &__title
+      font-size: 20px
+      line-height: 30px
+
+    &__text
+      font-size: 11px
+      line-height: 15px
+
+    &__button
+      margin-top: 20px
