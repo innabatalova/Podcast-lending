@@ -1,0 +1,66 @@
+.search
+
+  &__wrapper
+    position: relative
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: column
+    height: 430px
+    background-color: #17044D
+    border-radius: 15px
+    color: white
+    z-index: -2
+    overflow: hidden
+
+    &:after
+      content: ''
+      position: absolute
+      top: 0
+      left: -25%
+      width: 500px
+      height: 415px
+      border-radius: 50%
+      background: #0EA3E3
+      filter: blur(600px)
+      z-index: -1
+
+    &:before
+      content: ''
+      position: absolute
+      top: 0
+      right: -25%
+      width: 700px
+      height: 570px
+      border-radius: 50%
+      background: #6C22C9
+      filter: blur(400px)
+      z-index: -1
+
+  &__title
+    font-style: normal
+    font-weight: 500
+    font-size: 30px
+    line-height: 45px
+
+  &__text
+    font-style: normal
+    font-weight: normal
+    font-size: 16px
+    line-height: 24px
+    letter-spacing: 0.05em
+
+  &__button
+    padding: 9px 35px
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 21px
+    height: 40px
+    background-color: #9224D6
+    border: 1px solid #9224D6
+    border-radius: 5px
+    color: white
+
+    &:hover, &:focus
+      background-color: #e6e2e9
