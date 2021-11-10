@@ -660,7 +660,6 @@ a {
 }
 
 .newslist__cardwrap {
-  display: flex;
   justify-content: space-between;
 }
 
@@ -698,6 +697,19 @@ a {
   .newslist-titlewrap {
     margin-top: 50px;
     margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .newslist__card {
+    margin-bottom: 25px;
+  }
+  .newslist__card__img {
+    max-height: 350px;
+  }
+  .newslist__card__title {
+    font-size: 18px;
+    line-height: 32px;
   }
 }
 
