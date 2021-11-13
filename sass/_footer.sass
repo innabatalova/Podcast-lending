@@ -108,3 +108,28 @@
 
     &__copy
       opacity: 0.7
+
+@media screen and (max-width: 992px)
+  .footer
+
+    &-logo
+      margin-bottom: 50px
+
+    &__list
+      padding-left: 0
+
+@media screen and (max-width: 768px)
+  .footer
+
+    &__text
+      margin-bottom: 40px
+
+    &__bottom, &__list__item
+      font-size: 11px
+      line-height: 18px
+
+@media screen and (max-width: 576px)
+  .footer
+
+    &__bottom
+      flex-direction: column

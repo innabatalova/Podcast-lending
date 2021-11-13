@@ -983,4 +983,29 @@ a {
 .footer__bottom__copy {
   opacity: 0.7;
 }
+
+@media screen and (max-width: 992px) {
+  .footer-logo {
+    margin-bottom: 50px;
+  }
+  .footer__list {
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer__text {
+    margin-bottom: 40px;
+  }
+  .footer__bottom, .footer__list__item {
+    font-size: 11px;
+    line-height: 18px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .footer__bottom {
+    flex-direction: column;
+  }
+}
 /*# sourceMappingURL=style.css.map */
