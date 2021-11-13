@@ -10,7 +10,6 @@
     background-color: #17044D
     border-radius: 15px
     color: white
-    z-index: -2
     overflow: hidden
 
     &:after
@@ -38,29 +37,97 @@
       z-index: -1
 
   &__title
+    position: relative
     font-style: normal
     font-weight: 500
     font-size: 30px
     line-height: 45px
+    margin-bottom: 20px
 
   &__text
+    position: relative
     font-style: normal
     font-weight: normal
     font-size: 16px
     line-height: 24px
     letter-spacing: 0.05em
+    margin-bottom: 50px
+
+  &__input
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 21px
+    padding: 9px 25px
+    border: 1px solid rgba(255, 255, 255, 0.5)
+    border-radius: 5px 0 0 5px
+    letter-spacing: 0.05em
+    background-color: inherit
+    color: rgba(255, 255, 255, 0.5)
 
   &__button
+    position: relative
     padding: 9px 35px
     font-style: normal
     font-weight: normal
     font-size: 14px
     line-height: 21px
-    height: 40px
+    letter-spacing: 0.05em
+    height: 40.6px
     background-color: #9224D6
     border: 1px solid #9224D6
     border-radius: 5px
     color: white
+    cursor: pointer
+    margin-left: -7px
 
     &:hover, &:focus
-      background-color: #e6e2e9
+      background-color: #590c89
+
+@media screen and (max-width: 992px)
+  .search
+
+    &__text
+      font-size: 11px
+      line-height: 18px
+      margin-bottom: 30px
+
+@media screen and (max-width: 768px)
+  .search
+
+    &__wrapper
+      width: 110%
+      margin-left: -5%
+      height: 330px
+
+    &__title
+      font-size: 18px
+      line-height: 32px
+
+    &__text
+      margin-left: 20px
+      margin-right: 20px
+
+    &__input, &__button
+      font-size: 11px
+      line-height: 16px
+
+@media screen and (max-width: 576px)
+  .search
+
+    &__wrapper
+      width: 100%
+      margin-left: 0
+
+    &__title, &__form
+      margin-left: 20px
+      margin-right: 20px
+
+    &__input
+      width: 100%
+      border-radius: 5px
+      margin-bottom: 15px
+
+    &__button
+      width: 100%
+      margin-left: 0
